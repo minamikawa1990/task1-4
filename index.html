@@ -1,1 +1,57 @@
-task1-4
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="utf-8">
+    <title>task4</title>
+</head>
+<body>
+    <script>
+
+
+        function task() {
+            console.log("----------------------");
+            console.log("----------------------");
+            console.log("現在持っているタスク一覧");
+            console.log("----------------------");
+            console.log("----------------------");
+
+            let length = array.length;
+            for(let i = 0; i < length; i++){
+            console.log(i + ":" + array[i]);
+            }
+        }
+    
+    // ここから変更
+        contents = {
+            0:"机を片付ける",
+            1:"牛乳を買う",
+            2:"散歩する",
+        };
+
+        category = {
+            0:"掃除",
+            1:"買い物",
+            2:"運動",
+        };
+
+        
+
+    // ここまで変更
+
+
+
+        }
+        array = ["「内容」机を片付ける、「ジャンル」掃除","「内容」牛乳を買う、「ジャンル」買い物","「内容」散歩する、「ジャンル」運動"];
+        task();
+
+        let contents = window.prompt("タスクを入力してください");
+        let category = window.prompt("ジャンルを入力してください");
+        window.alert("新しいタスクを追加しました");
+        array.push(`「内容」 ${contents} 、「ジャンル」 ${category}`);
+        task();
+
+        
+        var result = window.prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください")
+    </script>
+</body>
+</html>
