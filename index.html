@@ -15,24 +15,24 @@
             console.log("----------------------");
             console.log("----------------------");
 
-            let length = array.length;
+            let length = taskArray.length;
             for(let i = 0; i < length; i++){
-            console.log(i + ":" + array[i]);
+            console.log(i + ":" + taskArray[i]);
             }
         }
 
-        }
-        array = ["「内容」机を片付ける、「ジャンル」掃除","「内容」牛乳を買う、「ジャンル」買い物","「内容」散歩する、「ジャンル」運動"];
+        
+        taskArray = ["「内容」机を片付ける、「ジャンル」掃除","「内容」牛乳を買う、「ジャンル」買い物","「内容」散歩する、「ジャンル」運動"];
         task();
 
-        let contents = window.prompt("タスクを入力してください");
-        let category = window.prompt("ジャンルを入力してください");
+        const contents = window.prompt("タスクを入力してください");
+        const category = window.prompt("ジャンルを入力してください");
         window.alert("新しいタスクを追加しました");
-        array.push(`「内容」 ${contents} 、「ジャンル」 ${category}`);
+        taskArray.push(`「内容」${contents} 、「ジャンル」${category}`);
         task();
 
         
-        var result = window.prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください")
+        const result = window.prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください")
     </script>
 </body>
 </html>
