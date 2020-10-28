@@ -15,17 +15,56 @@
             console.log("----------------------");
             console.log("----------------------");
 
-            let listType = taskArray.map(aaa => aaa.content);//オブジェクトのcontentの値を取得
-            let listContent = taskArray.map(bbb => bbb.type);//オブジェクトのtypeの値を取得
+            taskArray.forEach(element => {
+                console.log(`[内容]${element.content}、[ジャンル]${element.type}`);
+            });
+        }
 
-            listType.forEach(element => console.log(element));
-            listContent.forEach(element => console.log(element));
+            // taskArray.forEach((content,type) => {
+            //     console.log(`[内容] ${content} 、[ジャンル] ${type}`)
+            // })
 
-            listType = prompt("値を入力してください");
-            listContent.ssss = prompt("値を入力してください");
+            // for(i = 0; i < taskArray.length; i ++){
+            //     let listContent = taskArray[i].content;
+            //     let listType = taskArray[i].type;
+            //     console.log(`[内容] ${listContent} 、[ジャンル] ${listType}`);
+            // }
 
-            console.log(listType);
-            console.log(listContent);
+            // const addContent = window.prompt("タスクを入力してください");
+            // const addType = window.prompt("ジャンルを入力してください");
+
+            // listContent.phsu(addContent);
+            // listType.push(addType);
+            // console.log(listContent);
+
+            // for(i = 0; i < taskArray.length; i ++){
+            //     var listContent = taskArray[i].content;
+            //     var listType = taskArray[i].type;
+            //     console.log(`[内容] ${listContent} 、[ジャンル] ${listType}`);
+            // }
+
+            
+        
+
+
+            // let listType = taskArray.map(aaa => aaa.content);//オブジェクトのcontentの値を取得
+            // let listContent = taskArray.map(bbb => bbb.type);//オブジェクトのtypeの値を取得
+
+            // listType.forEach(element => console.log(element));
+            // listContent.forEach(element => console.log(element));
+
+            // listType = prompt("値を入力してください");
+            // listContent.ssss = prompt("値を入力してください");
+
+            // console.log(listType);
+            // console.log(listContent);
+
+            // let List = taskArray.forEach(taskArray((content, type) => {
+            //     return (
+            //         "[内容]" + content + "," + "[ジャンル]" + type
+            //     );
+            
+        
 
             // listType.forEach(element => console.log(element));
             // listContent.forEach(element => console.log(element));
@@ -33,7 +72,7 @@
             // let length = taskArray.length;
             // Object.values(taskArray).forEach(aaa => console.log(aaa))
             // console.log(i + ":" + taskArray[i]);
-        }
+        
         // array1.forEach(element => console.log(element))
        
     //    ①オブジェクトからkeyとvalueを取り出す。
@@ -50,7 +89,27 @@
                     }
                 ];
 
-        task();
+            // let Lists = taskArray.content;
+            // console.log(Lists)
+            // for(i = 0; i < taskArray.length; i ++){
+            //     var listContent = taskArray[i].content;
+            //     var listType = taskArray[i].type
+            //     console.log(`[内容] ${listContent} 、[ジャンル] ${listType}`);
+            // }
+            task();
+
+            taskArray.content = window.prompt("タスクを入力してください");
+            taskArray.type = window.prompt("ジャンルを入力してください");
+
+            // console.log(taskArray);
+            
+            // taskArray.content.forEach(element => console.log(element))
+            // Lists.forEach(element => console.log(element));
+                
+
+            task();
+
+        // task();
         
         //②forEachで全て出力する 
         
@@ -95,7 +154,7 @@
         // task();
 
         
-        const result = window.prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください")
+        // const result = window.prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください")
     </script>
 </body>
 </html>
