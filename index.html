@@ -17,6 +17,30 @@
             taskArray.forEach(element => console.log("[内容]" + element.content + "、" + "[ジャンル]" + element.type));
            
         }
+
+        taskArray = [
+                    {content: "机を片付ける",
+                    type: "掃除"
+                    },
+                    {content: "牛乳を買う",
+                    type: "買い物"
+                    },
+                    {content: "散歩する",
+                    type: "運動"
+                    }
+                ];
+
+        task();
+                
+        const newTask = {}　//newTaskの部分を初期に何もなしにしている
+        newTask.content = window.prompt("タスクを入力してください");//key(content)のcontentに入力した文字を格納
+        newTask.type = window.prompt("ジャンルを入力してください");//key(type)のtypeに入力した文字を格納
+                
+        taskArray.push(newTask);
+
+        task();
+                 
+        const result = window.prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください")
         //    const newTask = {}
         //    newTask.content = window.prompt("タスクを入力してください");
         //    newTask.type = window.prompt("ジャンルを入力してください");
@@ -86,29 +110,7 @@
        
     //    ①オブジェクトからkeyとvalueを取り出す。
 
-            taskArray = [
-                    {content: "机を片付ける",
-                    type: "掃除"
-                    },
-                    {content: "牛乳を買う",
-                    type: "買い物"
-                    },
-                    {content: "散歩する",
-                    type: "運動"
-                    }
-                ];
-
-                task();
-                
-                const newTask = {}　//newTaskの部分を初期に何もなしにしている
-                newTask.content = window.prompt("タスクを入力してください");//key(content)のcontentに入力した文字を格納
-                newTask.type = window.prompt("ジャンルを入力してください");//key(type)のtypeに入力した文字を格納
-                
-                taskArray.push(newTask);
-
-                task();
-
-                 const result = window.prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください")
+           
 
 
                  //newTaskをtaskArrayに追加
