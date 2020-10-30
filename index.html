@@ -14,10 +14,26 @@
             console.log("----------------------");
             console.log("----------------------");
 
-            taskArray.forEach(element => {
-                console.log(`[内容]${element.content}、[ジャンル]${element.type}`);
-            });
+            taskArray.forEach(element => console.log("[内容]" + element.content + "、" + "[ジャンル]" + element.type));
+           
         }
+        //    const newTask = {}
+        //    newTask.content = window.prompt("タスクを入力してください");
+        //    newTask.type = window.prompt("ジャンルを入力してください");
+
+
+
+// 引数に「"モカ"」と「8」を渡してください
+// const animal = new Animal("ジュース",8);
+
+// console.log(`名前: ${animal.name}`);
+// console.log(`年齢: ${animal.age}`);
+
+
+//             taskArray.forEach(element => {
+//                 console.log(`[内容]${element.content}、[ジャンル]${element.type}`);
+//             });
+//         }
 
             // taskArray.forEach((content,type) => {
             //     console.log(`[内容] ${content} 、[ジャンル] ${type}`)
@@ -82,6 +98,29 @@
                     }
                 ];
 
+                task();
+                
+                const newTask = {}　//newTaskの部分を初期に何もなしにしている
+                newTask.content = window.prompt("タスクを入力してください");//key(content)のcontentに入力した文字を格納
+                newTask.type = window.prompt("ジャンルを入力してください");//key(type)のtypeに入力した文字を格納
+                
+                taskArray.push(newTask);
+
+                task();
+
+                 const result = window.prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください")
+
+
+                 //newTaskをtaskArrayに追加
+                // Object.keys(taskArray).forEach(element => console.log(element));
+                    
+                
+               
+                
+
+                // taskArray.content.push(newTask.content);
+                // console.log(taskArray);
+
             // let Lists = taskArray.content;
             // console.log(Lists)
             // for(i = 0; i < taskArray.length; i ++){
@@ -89,17 +128,17 @@
             //     var listType = taskArray[i].type
             //     console.log(`[内容] ${listContent} 、[ジャンル] ${listType}`);
             // }
-            task();
+            
 
-            taskArray.content = window.prompt("タスクを入力してください");
-            taskArray.type = window.prompt("ジャンルを入力してください");
+            // taskArray.content = window.prompt("タスクを入力してください");
+            // taskArray.type = window.prompt("ジャンルを入力してください");
 
             // console.log(taskArray);
             
             // taskArray.content.forEach(element => console.log(element))
             // Lists.forEach(element => console.log(element));
                 
-            task();
+            
 
         // task();
         
@@ -131,7 +170,7 @@
         // taskArray.push(`「内容」${contents} 、「ジャンル」${category}`);
         // task();
 
-        // const result = window.prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください")
+       
     </script>
 </body>
 </html>
