@@ -7,7 +7,6 @@
 <body>
     <script>
 
-
         function task() {
             console.log("----------------------");
             console.log("----------------------");
@@ -15,43 +14,165 @@
             console.log("----------------------");
             console.log("----------------------");
 
-            let length = array.length;
-            for(let i = 0; i < length; i++){
-            console.log(i + ":" + array[i]);
-            }
+            taskArray.forEach(element => console.log("[内容]" + element.content + "、" + "[ジャンル]" + element.type));
+           
         }
-    
-    // ここから変更
-        contents = {
-            0:"机を片付ける",
-            1:"牛乳を買う",
-            2:"散歩する",
-        };
 
-        category = {
-            0:"掃除",
-            1:"買い物",
-            2:"運動",
-        };
+        taskArray = [
+                    {content: "机を片付ける",
+                    type: "掃除"
+                    },
+                    {content: "牛乳を買う",
+                    type: "買い物"
+                    },
+                    {content: "散歩する",
+                    type: "運動"
+                    }
+                ];
 
-        
-
-    // ここまで変更
-
-
-
-        }
-        array = ["「内容」机を片付ける、「ジャンル」掃除","「内容」牛乳を買う、「ジャンル」買い物","「内容」散歩する、「ジャンル」運動"];
         task();
+                
+        const newTask = {}　//newTaskの部分を初期に何もなしにしている
+        newTask.content = window.prompt("タスクを入力してください");//key(content)のcontentに入力した文字を格納
+        newTask.type = window.prompt("ジャンルを入力してください");//key(type)のtypeに入力した文字を格納
+                
+        taskArray.push(newTask);
 
-        let contents = window.prompt("タスクを入力してください");
-        let category = window.prompt("ジャンルを入力してください");
-        window.alert("新しいタスクを追加しました");
-        array.push(`「内容」 ${contents} 、「ジャンル」 ${category}`);
         task();
+                 
+        const result = window.prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください")
+        //    const newTask = {}
+        //    newTask.content = window.prompt("タスクを入力してください");
+        //    newTask.type = window.prompt("ジャンルを入力してください");
 
+
+
+// 引数に「"モカ"」と「8」を渡してください
+// const animal = new Animal("ジュース",8);
+
+// console.log(`名前: ${animal.name}`);
+// console.log(`年齢: ${animal.age}`);
+
+
+//             taskArray.forEach(element => {
+//                 console.log(`[内容]${element.content}、[ジャンル]${element.type}`);
+//             });
+//         }
+
+            // taskArray.forEach((content,type) => {
+            //     console.log(`[内容] ${content} 、[ジャンル] ${type}`)
+            // })
+
+            // for(i = 0; i < taskArray.length; i ++){
+            //     let listContent = taskArray[i].content;
+            //     let listType = taskArray[i].type;
+            //     console.log(`[内容] ${listContent} 、[ジャンル] ${listType}`);
+            // }
+
+            // const addContent = window.prompt("タスクを入力してください");
+            // const addType = window.prompt("ジャンルを入力してください");
+
+            // listContent.phsu(addContent);
+            // listType.push(addType);
+            // console.log(listContent);
+
+            // for(i = 0; i < taskArray.length; i ++){
+            //     var listContent = taskArray[i].content;
+            //     var listType = taskArray[i].type;
+            //     console.log(`[内容] ${listContent} 、[ジャンル] ${listType}`);
+            // }
+
+            // let listType = taskArray.map(aaa => aaa.content);//オブジェクトのcontentの値を取得
+            // let listContent = taskArray.map(bbb => bbb.type);//オブジェクトのtypeの値を取得
+
+            // listType.forEach(element => console.log(element));
+            // listContent.forEach(element => console.log(element));
+
+            // listType = prompt("値を入力してください");
+            // listContent.ssss = prompt("値を入力してください");
+
+            // console.log(listType);
+            // console.log(listContent);
+
+            // let List = taskArray.forEach(taskArray((content, type) => {
+            //     return (
+            //         "[内容]" + content + "," + "[ジャンル]" + type
+            //     );
+            
+            // listType.forEach(element => console.log(element));
+            // listContent.forEach(element => console.log(element));
+            
+            // let length = taskArray.length;
+            // Object.values(taskArray).forEach(aaa => console.log(aaa))
+            // console.log(i + ":" + taskArray[i]);
         
-        var result = window.prompt("「確認,追加,削除,終了」の4つのいずれかを入力してください")
+        // array1.forEach(element => console.log(element))
+       
+    //    ①オブジェクトからkeyとvalueを取り出す。
+
+           
+
+
+                 //newTaskをtaskArrayに追加
+                // Object.keys(taskArray).forEach(element => console.log(element));
+                    
+                
+               
+                
+
+                // taskArray.content.push(newTask.content);
+                // console.log(taskArray);
+
+            // let Lists = taskArray.content;
+            // console.log(Lists)
+            // for(i = 0; i < taskArray.length; i ++){
+            //     var listContent = taskArray[i].content;
+            //     var listType = taskArray[i].type
+            //     console.log(`[内容] ${listContent} 、[ジャンル] ${listType}`);
+            // }
+            
+
+            // taskArray.content = window.prompt("タスクを入力してください");
+            // taskArray.type = window.prompt("ジャンルを入力してください");
+
+            // console.log(taskArray);
+            
+            // taskArray.content.forEach(element => console.log(element))
+            // Lists.forEach(element => console.log(element));
+                
+            
+
+        // task();
+        
+        //②forEachで全て出力する 
+        
+        // let contents = window.prompt("タスクを入力してください");
+        // let category = window.prompt("ジャンルを入力してください");
+        
+        // console.log(listType);
+        // console.log(listContent);
+
+        // lists = [listType,listContent];
+        // console.log(lists);
+        
+        // let listContent = taskArray.map(bbb => bbb.content);
+        
+        // listType.forEach(aaa,bbb => console.log(`[内容]${aaa}、[ジャンル]${bbb}`))
+
+            // {"「内容」机を片付ける、「ジャンル」掃除","「内容」牛乳を買う、「ジャンル」買い物","「内容」散歩する、「ジャンル」運動"];
+        // task();
+        // const listType = taskArray.map(aaa => aaa.type);
+        // console.log(`[内容]${listType}`);
+        // const listContent = taskArray.map(bbb => bbb.content);
+        // console.log(listContent);
+
+        // window.alert("新しいタスクを追加しました");
+        // taskArray.content = contents
+        // taskArray.type = category;
+        // taskArray.push(`「内容」${contents} 、「ジャンル」${category}`);
+        // task();
+
+       
     </script>
 </body>
 </html>
